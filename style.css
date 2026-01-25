@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 5px;
+}
+body{
+    font-family: "Lora", serif;
+}
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    font-size: 1.2rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #868e87;
+    text-decoration: overline underline;
+    text-decoration-thickness: 0.3rem;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: #bdb7b6;
+}
+
+.logo{
+    font-size: 1.6rem;
+}
+.logo:hover{
+    color: #5a605e;
+    cursor: default;
+}
+/*mobile nav*/
+#mobile-nav{
+    display: none;
+}
+.mobile-menu{
+    position: relative;
+    display: inline-block;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
