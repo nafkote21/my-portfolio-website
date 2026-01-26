@@ -6,8 +6,10 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
         <div class="logo">Meaza Yosef</div>
         <div>
@@ -19,7 +21,7 @@
             </ul>
         </div>
     </nav>
-    
+    <!-- Mobile Navigation -->
     <nav id="mobile-nav">
         <div class="logo">Meaza Yosef</div>
         <div class="mobile-menu" ></div>
@@ -28,17 +30,20 @@
             <span></span>
             <span></span>
         </div>
-        <div class="menu-links" >
-            <ul>
+        <div>
+            <ul class="menu-links" >
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </ul>
-                </div>
+            <i class="fa fa-bars"></i>
+        </div>
         </div>
         </div>
         </nav>
     </nav>
+
+    <script src="script.js"></script>
 </body>
 </html>
