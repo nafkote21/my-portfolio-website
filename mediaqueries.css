@@ -5,4 +5,7 @@
     #mobile-nav{
         display: flex;
     }
+    #profile {
+    display: block;
+    }
 }
