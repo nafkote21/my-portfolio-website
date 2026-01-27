@@ -1,7 +1,9 @@
-function toggleMenu() {
-    const menuLinks = document.querySelector('.menu-links');
-    const menuIcon = document.querySelector('.menu-icon i');
-    menuLinks.classList.toggle("open");
-    menuIcon.classList.toggle("open");
+function myFunction() {
+    const menu = document.getElementById("myLinks");
 
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
 }

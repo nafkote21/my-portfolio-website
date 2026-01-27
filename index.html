@@ -14,7 +14,7 @@
         <div class="logo">Meaza Yosef</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" >About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -24,26 +24,29 @@
     <!-- Mobile Navigation -->
     <nav id="mobile-nav">
         <div class="logo">Meaza Yosef</div>
-        <div class="mobile-menu" ></div>
-        <div id="menu-icon" onclick="toggleMenu()" >
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div>
-            <ul class="menu-links" >
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
+        <div class="menu-icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </div>
+        <div id="myLinks" class="nav-links-mobile">
+            <ul>
+                <li><a href="#about" onclick="myFunction()">About</a></li>
+                <li><a href="#skills" onclick="myFunction()">Skills</a></li>
+                <li><a href="#projects" onclick="myFunction()">Projects</a></li>
+                <li><a href="#contact" onclick="myFunction()">Contact</a></li>
+            </ul>
         </div>
-        </div>
-        </nav>
     </nav>
+    <section id="profile">
+        <div class="profile-info">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Meaza Yosef, a frontend developer.</p>
+        </div>
+        <div class="profile-image">
+            <img src="images/meaza.png" alt="Profile Picture" />
+        </div>
+    </section>
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>
 </html>

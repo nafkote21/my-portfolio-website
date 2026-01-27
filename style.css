@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-*{
+* {
     margin: 0;
     padding: 5px;
-    background-image: url(images/back2.png);
+    box-sizing: border-box;
 }
+
 body{
     font-family: "Lora", serif;
     background-image: url(images/background.png);
@@ -53,63 +54,38 @@ a{
     color: #5a605e;
     cursor: default;
 }
-/*mobile nav*/
+/*mobile navigation style*/
 #mobile-nav{
-    display: none ;
-}
-.mobile-menu{
-    position: relative;
-    display: inline-block;
-}
-
-.menu-icon {
-    display: flex;
+    display: none;
     flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-.menu-icon span {
+    align-items: flex-end;
     width: 100%;
-    height: 2px;
-    background-color: rgb(0, 0, 0);
-    transition: all 0.3 ease-in-out;
 }
-.menu-links {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    box-shadow: 0 8px 16px rgba(255, 29, 29, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#myLinks{
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    max-height: 0;
-    background-color: #fdfdfd;
+    background-color: #97906f;
+    position: relative;
+    width: 100%;
 }
-.menu-links a {
-    display: block;
-    padding: 10px;
+#myLinks li{
+    color: white;
+    padding: 12px 16px;
     text-align: center;
-    font-size: 1.3rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    list-style: none;
+    background-color: rgb(189, 187, 157);
 }
-
-.menu-links a:hover {
-    background-color: #4e4b4b;
-    color: #fdfdfd;
-
-}
-.active {
-    background-color: aquamarine;
-    color: rgb(16, 118, 207);
-}
-i{
-    font-size: 1.5rem;
+#myLinks li:hover{
+    background-color: #a0a2b6;
     cursor: pointer;
-    
 }
+#myLinks a:hover{
+    color: rgb(242, 242, 242);
+}
+
+
