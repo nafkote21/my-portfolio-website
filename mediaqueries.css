@@ -8,4 +8,9 @@
     #profile {
     display: block;
     }
+}:root {
+  --bg: white;
+  --text: black;
 }
+
+
