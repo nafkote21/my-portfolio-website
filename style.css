@@ -192,5 +192,5 @@ body.dark-mode {
 .social-link:hover{
     transform: scale(1.1);
     cursor: pointer;
-    filter: drop-shadow(0 0 5px rgba(80, 40, 199, 0.5));
+    filter: drop-shadow(0 0 5px rgba(235, 230, 251, 0.5));
 }
