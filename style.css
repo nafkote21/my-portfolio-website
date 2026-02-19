@@ -137,16 +137,23 @@ section {
     color: #3b3b3b; 
 }
 
-.btn{
-    border-radius: 5px;
-    background-color: transparent;
+.CvBtn{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.587);
     font-size: 1rem;
     font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    color: #3b3b3b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+  margin: 30px auto;
 }
-.btn:hover{
-   
+.CvBtn:hover{
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #3b3b3b66;
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 /* Dark Mode Style */
@@ -163,6 +170,27 @@ body.dark-mode {
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    background-color: #333;
+    background-color: #a0949473;
     color: white;
+    
+}
+/* About Section Style */
+#about{
+    display: flex;
+    text-align: center;
+    background-color: rgba(174, 207, 207, 0.29);
+}
+.social-link{
+    width: 45px;
+    height: 45px;
+    transition: all 300ms ease;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+}
+.social-link:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(80, 40, 199, 0.5));
 }
