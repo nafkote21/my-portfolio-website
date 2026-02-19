@@ -7,25 +7,31 @@ function myFunction() {
         menu.style.display = "block";
     }
 }
-
-//dark mode
-const toggleBtn = document.getElementById("themeToggle");
+// Dark mode: support both mobile and desktop toggle buttons
 const body = document.body;
+const mobileToggle = document.getElementById("themeToggle");
+const desktopToggle = document.getElementById("themeToggleDesktop");
 
-if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-mode");
-    toggleBtn.textContent = "☀️ Light Mode";
+function updateToggleText(btn) {
+    if (!btn) return;
+    btn.textContent = body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
 }
 
-toggleBtn.onclick = () => {
-    body.classList.toggle("dark-mode");
+// initialize theme from localStorage
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+}
 
-    if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-        toggleBtn.textContent = "☀️ Light Mode";
-    } else {
-        localStorage.setItem("theme", "light");
-        toggleBtn.textContent = "🌙 Dark Mode";
-    }
-};
+updateToggleText(mobileToggle);
+updateToggleText(desktopToggle);
+
+function toggleTheme() {
+    body.classList.toggle("dark-mode");
+    localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
+    updateToggleText(mobileToggle);
+    updateToggleText(desktopToggle);
+}
+
+if (mobileToggle) mobileToggle.addEventListener("click", toggleTheme);
+if (desktopToggle) desktopToggle.addEventListener("click", toggleTheme);
 

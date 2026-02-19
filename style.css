@@ -172,7 +172,15 @@ body.dark-mode {
     border-radius: 6px;
     background-color: #a0949473;
     color: white;
-    
+}
+#themeToggleDesktop {
+    padding: 10px 15px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #a0949473;
+    color: white;
 }
 /* About Section Style */
 #about{
