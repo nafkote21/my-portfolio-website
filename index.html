@@ -6,31 +6,43 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <!-- Desktop Navigation -->
-    <header>
-    <nav id="desktop-nav">
-        <!--day night-->
-            <button id="themeToggleDesktop" type="button">🌙 Dark Mode</button>
-        <div class="logo">Meaza Yosef</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about" >About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <canvas id="moving-particles"></canvas>
+    <header id="header">
+        <!-- Desktop Navigation -->
+        <nav id="desktop-nav">
+            <div class="logo">M<span class="logo-dot">.</span></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <button id="themeToggleDesktop" type="button" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
     
     <!-- Mobile Navigation -->
-    <nav id="mobile-nav">
-        <button id="themeToggle">🌙 Dark Mode</button>
-        <div class="logo">Meaza Yosef</div>
-        <div class="menu-icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+    <nav id="mobile-nav">  
+        <div class="logo">M<span class="logo-dot">.</span></div>
+        <div class="mobile-nav-right">
+            <button id="themeToggle" type="button" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        <div class="hamburger" onclick="myFunction()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div id="myLinks" class="nav-links-mobile">
             <ul>
@@ -42,29 +54,36 @@
         </div>
     </nav>
     </header>
-    <!-- Profile Section -->
-    <section id="profile">
-        <div class="profile-image">
-            <img src="images/meaza.png" alt="Profile Picture" />
-        </div>
-        <div class="profile-info">
-            <p class="text-p1">Hi, I'm </p>
+    <section id="home">
+        <div class="home-content">
+            <p class="hellp">Hello, I'm</p>
             <h1 class="name">Meaza Yosef</h1>
-            <p class="text-p2">Frontend Developer</p>
-            <button class="CvBtn" onclick="window.open('./cv/Meaza_yosef_Resume.pdf')">Download CV</button>
-            <img src="images/github.png" alt="github profile link" class="social-link" onclick="window.open('https://github.com/nafkote21')">
-            <img src="images/telegram.png" alt="telegram link" class="social-link" onclick="window.open('https://t.me/nafkotemaye')">
+            <div class="hero-title-wrapper">
+                    <span class="hero-title">Frontend Developer</span>
+                    <span class="typing-cursor">|</span>
+            </div>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.open('./cv/Meaza_yosef_Resume.pdf')">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </button>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-solid fa-envelope"></i> Contact Me
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/nafkote21" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <img src="images/github.png" alt="GitHub" />
+                </a>
+                <a href="https://t.me/nafkotemaye" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
+                    <img src="images/telegram.png" alt="Telegram" />
+                </a>
+            </div>
         </div>
 
-    </section>
-    <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hello! I'm Meaza Yosef, a passionate frontend developer with experience in creating responsive and user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks like React.</p>
-        </div>
     </section>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>
 </html>
+    

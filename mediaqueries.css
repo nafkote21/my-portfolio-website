@@ -1,17 +1,16 @@
-@media screen and (max-width:900px){
+@media screen and (max-width:768px){
     #desktop-nav{
         display: none;
     }
     #mobile-nav{
         display: flex;
     }
-    #profile {
-    display: block;
+    #myLinks {
+        display: none;
     }
-    
-}:root {
-  --bg: white;
-  --text: black;
+    #myLinks.open {
+        display: flex;
+    }
 }
 
 
