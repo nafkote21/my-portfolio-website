@@ -39,6 +39,42 @@ navLinks.forEach((link) => {
     };
 });
 
+//typing effect for the home section
+(function () {
+    const titles = ["Frontend Developer"];
+    const titleEl = document.querySelector(".title");
+    if (!titleEl) return;
+    let titleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+
+    function type() {
+        const current = titles[titleIndex];
+        if (isDeleting) {
+            titleEl.textContent = current.substring(0, charIndex - 1);
+            charIndex--;
+            typingSpeed = 50;
+        } else {
+            titleEl.textContent = current.substring(0, charIndex + 1);
+            charIndex++;
+            typingSpeed = 100;
+        }
+
+        if (!isDeleting && charIndex === current.length) {
+            typingSpeed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            titleIndex = (titleIndex + 1) % titles.length;
+            typingSpeed = 400;
+        }
+
+        setTimeout(type, typingSpeed);
+    }
+
+    setTimeout(type, 1500);
+})();
 
 
 
