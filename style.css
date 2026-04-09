@@ -250,6 +250,7 @@ section {
     justify-content: space-between;
     gap: 4rem;
     padding: 150px;
+    position: relative;
 }
 .home-content {
     flex: 1;
@@ -395,11 +396,15 @@ section {
 }
 .scroll-indicator {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 2rem;
     animation: bounce 2s infinite;
     color: var(--text-muted);
     font-size: 1.2rem;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .name {
     font-family: 'Playfair Display', serif;
@@ -415,3 +420,20 @@ section {
     background-clip: text;
     animation: shimmer 5s linear infinite;
 }
+.home-image {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+    padding-left: 10px;
+}
+.home-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.home-image img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: var(--shadow-hover);
+}   
