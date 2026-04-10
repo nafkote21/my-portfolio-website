@@ -1,5 +1,8 @@
 /*function for changing the header background color when scrolling down the page*/
 const header = document.querySelector("header");
+const showHeaderBtn = document.getElementById("showHeaderBtn");
+let lastScrollY = window.scrollY;
+
 window.onscroll = function () {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 50) {
@@ -7,7 +10,23 @@ window.onscroll = function () {
     } else {
         header.classList.remove("scrolled"); 
     }
+
+    // Hide header on scroll down, show on scroll up
+    if (scrollPosition > lastScrollY && scrollPosition > 100) {
+        header.classList.add("hidden");
+        showHeaderBtn.style.display = "block";
+    } else if (scrollPosition < lastScrollY) {
+        header.classList.remove("hidden");
+        showHeaderBtn.style.display = "none";
+    }
+    lastScrollY = scrollPosition;
 };
+
+// Show header on button click
+showHeaderBtn.addEventListener("click", function() {
+    header.classList.remove("hidden");
+    showHeaderBtn.style.display = "none";
+});
 
 // Function to toggle dark mode
 const desktopButton = document.getElementById("themeToggleDesktop");
