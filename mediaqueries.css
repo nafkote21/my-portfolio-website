@@ -13,4 +13,41 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 2rem 1.25rem 3rem;
+    }
+    .profile,
+    .about-content {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-cards,
+    .contact-form {
+        width: 100%;
+        min-width: auto;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-cards {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+}

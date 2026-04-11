@@ -58,6 +58,15 @@ navLinks.forEach((link) => {
     };
 });
 
+// fill skill bars based on the data-width attribute
+const skillFills = document.querySelectorAll('.skill-fill');
+skillFills.forEach(fill => {
+    const width = fill.dataset.width;
+    if (width) {
+        fill.style.width = width;
+    }
+});
+
 //typing effect for the home section
 (function () {
     const titles = ["Frontend Developer"];
