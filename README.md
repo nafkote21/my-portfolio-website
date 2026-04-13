@@ -38,18 +38,18 @@ MY-PORTFOLIO-WEBSITE/
 │── style.css
 |-screenshoot
 
+```
+
 ✨ Features
 
 * Responsive design (works on mobile & desktop)
 * Smooth scrolling navigation
 * Dark/Light mode toggle
 
-## 📸 Screenshots
+ 📸 Screenshots
 ![Home](screenshoot/home.png)
 ![home darkmod](screenshhot/homeblack.png)
 ![Phonesize](screenshoot/phonesize.png)
-
-
 
 
 ⚙️ How to Run Locally
@@ -58,24 +58,19 @@ MY-PORTFOLIO-WEBSITE/
 2. Open the folder
 3. Double-click `index.html`
 
----
 
-## 📬 Contact Me
+ Contact Me
 
-* Email: [your-email@example.com](mailto:your-email@example.com)
-* LinkedIn: https://linkedin.com/in/yourprofile
-* GitHub: https://github.com/yourusername
+📧 Email: nafkotemaye2013@gmail.com
+📞 Phone: 0993645874
+💻 GitHub: nafkote21
 
----
-
-## 📄 License
+📄 License
 
 This project is open source and free to use.
 
----
 
-## 🙌 Acknowledgements
+ 🙌 Acknowledgements
 
 Thanks to all the resources and tutorials that helped me build this project.
 
----
