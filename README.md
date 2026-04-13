@@ -46,11 +46,18 @@ MY-PORTFOLIO-WEBSITE/
 * Smooth scrolling navigation
 * Dark/Light mode toggle
 
- 📸 Screenshots
-![Home](screenshoot/home.png)
-![home darkmod](screenshhot/homeblack.png)
-![Phonesize](screenshoot/phonesize.png)
+## 📸 Screenshots
 
+<p align="center">
+  <img src="screenshoot/home.png" width="600" height="300"/><br><br>
+  <p>Home page with light mode</p>
+
+  <img src="screenshoot/homeblack.png" width="600" height="300"/><br><br>
+  <p>Home page with dark mode</p>
+
+  <img src="screenshoot/phonesize.png" width="200" height="300"/><br><br>
+  <p>Responsive design for phone</p>
+</p>
 
 ⚙️ How to Run Locally
 
