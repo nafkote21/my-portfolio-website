@@ -68,8 +68,8 @@ MY-PORTFOLIO-WEBSITE/
 
  Contact Me
 
-📧 Email: nafkotemaye2013@gmail.com
-📞 Phone: 0993645874
+📧 Email: nafkotemaye2013@gmail.com<br>
+📞 Phone: 0993645874<br>
 💻 GitHub: nafkote21
 
 📄 License
